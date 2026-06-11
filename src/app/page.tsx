@@ -7,21 +7,16 @@ import { EventGallery } from "@/components/home/EventGallery";
 import { InteractionForms } from "@/components/home/InteractionForms";
 import { OfficeLocations } from "@/components/home/OfficeLocations";
 import { DynamicSection } from "@/components/home/DynamicSection";
+import AtiJourneyTimeline from "@/components/home/AtiJourneyTimeline";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
       <DynamicSection />
-      <Features />
+      <AtiJourneyTimeline />
       <Leadership />
-      
-      {/* Provincial Leadership Section */}
-      <ProvincialCabinets />
-      <AboutJourney />
-      <OfficeLocations />
-      <EventGallery />
-      <InteractionForms />
+    
     </div>
   );
 }
